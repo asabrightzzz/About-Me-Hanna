@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import {
   About,
   Experience,
