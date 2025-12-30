@@ -20,7 +20,6 @@ const ProjectCard = ({
   const [isZoomed, setIsZoomed] = useState(false);
   const audioRef = useRef(null);
 
-  // Fungsi toggle musik
   const togglePlay = async (e) => {
     e.stopPropagation();
     if (!audioRef.current) return;
@@ -40,7 +39,6 @@ const ProjectCard = ({
     }
   };
 
-  // Sinkronisasi dengan Navbar agar tersembunyi saat zoom
   useEffect(() => {
     const event = new CustomEvent("creativeZoom", { 
       detail: { isZoomed: isZoomed } 
@@ -74,7 +72,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl transition-all group-hover:scale-105"
           />
           
-          {/* Overlay Kategori Music */}
+          {/* Overlay Music Category */}
           {category === "music" && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl">
               <button
@@ -94,7 +92,7 @@ const ProjectCard = ({
             </div>
           )}
 
-          {/* Overlay Kategori Creative */}
+          {/* Overlay Creative Category */}
           {category === "creative" && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl">
               <div className="bg-black/60 backdrop-blur-sm p-3 rounded-full">
@@ -103,7 +101,7 @@ const ProjectCard = ({
             </div>
           )}
 
-          {/* Link Icon (Github/Insta/Music) */}
+          {/* Link Icon*/}
           <div className="absolute top-3 right-3 flex gap-2">
             <div
               onClick={(e) => {
@@ -205,7 +203,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>My work history</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects Showcase.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Projects Showcase</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -247,7 +245,7 @@ const Works = () => {
               />
             ))
           ) : (
-            /* Layout Work in Progress - Mobile Optimized */
+
             <motion.div
               key="wip-container"
               initial={{ opacity: 0, scale: 0.9 }}

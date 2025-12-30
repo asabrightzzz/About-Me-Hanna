@@ -1,5 +1,4 @@
 import {
-  creator,
   javascript,
   html,
   css,
@@ -48,8 +47,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "experience",
+    title: "Experience",
+  },
+  {
     id: "works",
     title: "Works",
+  },
+    {
+    id: "tech",
+    title: "Tech",
   },
   {
     id: "documentation",
