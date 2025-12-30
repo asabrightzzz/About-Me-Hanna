@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/next";
 import {
   About,
   Experience,
@@ -28,7 +27,6 @@ const App = () => {
         <Certificates />
         <div className="relative z-0">
           <Footer />
-          <Analytics />
         </div>
       </div>
     </BrowserRouter>
