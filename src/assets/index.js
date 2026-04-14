@@ -12,6 +12,7 @@ import music from "./music.png";
 import docs1 from "./docs1.jpg";
 import cert1 from "./cert1.jpg";
 import cert2 from "./cert2.jpg";
+import cert3 from "./cert3.jpeg";
 import ketua from "./ketua.jpeg";
 import pubspik from "./pubspik.jpg";
 import juara1 from "./juara1.jpg";
@@ -85,6 +86,7 @@ export {
   docs1,
   cert1,
   cert2,
+  cert3,
   ketua,
   kemblok,
   pubspik,

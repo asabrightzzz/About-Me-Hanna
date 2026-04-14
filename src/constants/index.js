@@ -39,6 +39,7 @@ import {
   nanami,
   suisei,
   kaiser,
+  cert3,
 } from "../assets";
 
 export const navLinks = [
@@ -215,6 +216,7 @@ const documentations = [
 const certificates = [
   { name: "1st Place UI/UX Design Trilogi Competition", image: cert1 },
   { name: "2nd Place UI/UX Design Jendral Achmad Yani University Competition", image: cert2 },
+  { name: "3rd Place Website Development SMK Pariwisata Metland Competition", image: cert3},
 ];
 
 
