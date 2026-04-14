@@ -54,10 +54,6 @@ const Navbar = () => {
             alt='logo' 
             className='w-9 h-9 object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]' 
           />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'>
-            HM &nbsp;
-            <span className='sm:block hidden text-[#18c8ff] brightness-125'> | Logically Creative</span>
-          </p>
         </Link>
 
         {/* Desktop Navigation */}
